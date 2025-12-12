@@ -19,7 +19,7 @@ public class FarSixBallBluePaths
                 .addPath(
                         new BezierLine(new Pose(56.000, 9.000), new Pose(56.000, 18.000))
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(180))
+                .setLinearHeadingInterpolation(Math.toRadians(180),Math.toRadians(114))
                 .build();
 
         Path2 = follower
@@ -44,7 +44,7 @@ public class FarSixBallBluePaths
                                 new Pose(56.000, 18.000)
                         )
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(180))
+                .setLinearHeadingInterpolation(Math.toRadians(180),Math.toRadians(114))
                 .build();
 
         Path4 = follower

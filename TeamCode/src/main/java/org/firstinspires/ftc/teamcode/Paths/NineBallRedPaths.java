@@ -21,7 +21,7 @@ public class NineBallRedPaths
                 .addPath(
                         new BezierLine(new Pose(25.500, 129.000).mirror(), new Pose(58.300, 85.000).mirror())
                 )
-                .setLinearHeadingInterpolation(Math.toRadians(37), Math.toRadians(0))
+                .setConstantHeadingInterpolation(Math.toRadians(37))
                 .build();
 
         Path2 = follower
@@ -37,7 +37,7 @@ public class NineBallRedPaths
                 .addPath(
                         new BezierLine(new Pose(18.000, 84.000).mirror(), new Pose(58.300, 85.000).mirror())
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(0))
+                .setLinearHeadingInterpolation(Math.toRadians(0),Math.toRadians(37))
                 .build();
 
         Path4 = follower
@@ -62,7 +62,7 @@ public class NineBallRedPaths
                                 new Pose(58.400, 85.200).mirror()
                         )
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(0))
+                .setLinearHeadingInterpolation(Math.toRadians(0),Math.toRadians(37))
                 .build();
 
         Path6 = follower

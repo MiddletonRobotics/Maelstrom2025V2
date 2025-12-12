@@ -46,7 +46,7 @@ public class NineBallCloseBlueV2 extends CommandOpMode
                                 new ParallelCommandGroup(
                                         new InstantCommand(() -> robot.shooter.enableFlywheel()),
                                         new InstantCommand(() -> robot.turret.setPointMode()),
-                                        new InstantCommand(() -> robot.turret.setManualAngle(-47)),
+                                        new InstantCommand(() -> robot.turret.setManualAngle(0)),
                                         new FollowPathCommand(follower,paths.Path1,true)
                                 ),
                                 new WaitCommand(50),

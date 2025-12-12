@@ -21,7 +21,7 @@ public class NineBallBluePaths2
                 .addPath(
                         new BezierLine(new Pose(25.500, 129.000), new Pose(58.300, 85.000))
                 )
-                .setLinearHeadingInterpolation(Math.toRadians(143), Math.toRadians(180))
+                .setConstantHeadingInterpolation(Math.toRadians(143))
                 .build();
 
         Path2 = follower
@@ -37,7 +37,7 @@ public class NineBallBluePaths2
                 .addPath(
                         new BezierLine(new Pose(18.000, 84.000), new Pose(58.300, 85.000))
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(180))
+                .setLinearHeadingInterpolation(Math.toRadians(180),Math.toRadians(143))
                 .build();
 
         Path4 = follower
@@ -62,7 +62,7 @@ public class NineBallBluePaths2
                                 new Pose(58.400, 85.200)
                         )
                 )
-                .setConstantHeadingInterpolation(Math.toRadians(180))
+                .setLinearHeadingInterpolation(Math.toRadians(180),Math.toRadians(143))
                 .build();
 
         Path6 = follower

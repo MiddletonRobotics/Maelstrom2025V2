@@ -21,7 +21,8 @@ public class BlueCompetitionTeleOP extends OpMode
     @Override
     public void start()
     {
-        Robot.turret.startPoseTracking();
+        Robot.turret.setPointMode();
+        Robot.turret.setManualAngle(0);
     }
 
     @Override
